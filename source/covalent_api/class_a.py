@@ -5,7 +5,7 @@
 
 from functools import partial
 
-from covalent_api import constants
+from source.covalent_api import constants
 
 
 def max_pages_exceeded(pages, max_pages):

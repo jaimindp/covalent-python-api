@@ -133,9 +133,9 @@ class Session(object):
         params = self._check_params(params)
 
         self.logger.debug("Parameters: {}".format(params))
-
+        print(url+'?&key=%s' % self.api_key)
         response = self._request.get(
-            url,
+            url+'?&key=%s' % self.api_key,
             params=params,
             timeout=self.request_timeout
         )

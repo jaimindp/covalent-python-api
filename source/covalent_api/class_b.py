@@ -3,7 +3,7 @@
 # Please see the LICENSE file that should have been included as part of this
 # package.
 
-from covalent_api import constants
+from source.covalent_api import constants
 
 
 class ClassB(object):
@@ -142,9 +142,11 @@ class ClassB(object):
         :param address: Passing in an ENS resolves automatically.
         :type address: string
         '''
+        
         method_url = '/v1/1/address/{address}/stacks/aave/balances/'.format(
             address=address
         )
+
         params = {
         }
 

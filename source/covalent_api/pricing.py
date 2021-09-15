@@ -4,7 +4,7 @@
 # package.
 
 
-from covalent_api import constants
+from source.covalent_api import constants
 
 
 class Pricing(object):
